@@ -1,7 +1,10 @@
 import pandas as pd
+import os
+
+print(os.getcwd)
 
 # Datensatz laden
-mushroom_data = pd.read_csv("mushrooms.csv")
+mushroom_data = pd.read_csv(r"mushrooms.csv")
 
 # Die ersten paar Zeilen des Datensatzes anzeigen
 print(mushroom_data.head())
