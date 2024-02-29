@@ -156,6 +156,19 @@ plt.show()
 '''
 
 # ---- Random-Forest ---- #
+X=mushroom_data.drop('class', axis=1) 
+y=mushroom_data['class'] 
+X.head()
+Encoder_X = LabelEncoder() 
+for col in X.columns:
+    X[col] = Encoder_X.fit_transform(X[col])
+
+Encoder_y = LabelEncoder()
+y = Encoder_y.fit_transform(y)
+
+X_train,X_test,Y_train,Y_test=train_test_split(X,y,test_size=0.2,random_state=100)
+print(f"Number of samples for training set:{X_train.shape}")
+print(f"Number of samples for test set:{X_test.shape}")
 
 # Daten vorbereiten
 label_encoder = LabelEncoder()
