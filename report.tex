@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Machine Learning Projekt zur Pilzerkennung}
+\author{Ihr Name}
+
+\begin{document}
+\maketitle
+
+\section{Einleitung}
+Dieser Bericht dokumentiert ein Machine Learning Projekt zur Klassifizierung von Pilzen basierend auf ihren Eigenschaften. Das Ziel des Projekts war es, ein Modell zu entwickeln, das anhand der Eigenschaften eines Pilzes vorhersagen kann, ob er essbar oder giftig ist. Das Projekt umfasst die Datenaufbereitung, Explorationsdatenanalyse, Feature Engineering, Modellentwicklung, Hyperparameter-Tuning und Evaluierung.
+
+\section{Datensatz}
+Der verwendete Datensatz enthält Informationen über verschiedene Merkmale von Pilzen, darunter Farbe, Geruch, Struktur usw. Jeder Datensatz ist mit einer Klasse markiert, die angibt, ob der Pilz essbar oder giftig ist. Der Datensatz wurde geladen und eine explorative Datenanalyse wurde durchgeführt, um seine Struktur und Verteilung zu verstehen.
+
+\section{Datenexploration}
+Die Daten wurden analysiert, um ihre Verteilung, die Häufigkeit der Klassen und Ausreißer zu untersuchen. Verschiedene Visualisierungen wurden erstellt, um die Beziehung zwischen den Merkmalen und der Zielvariable zu untersuchen. Die Datenqualität wurde überprüft, und es wurden keine offensichtlichen Probleme festgestellt.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{class_distribution.png}
+    \caption{Verteilung der Klassen im Datensatz}
+\end{figure}
+
+\section{Feature Engineering}
+Es wurden verschiedene Techniken angewendet, um die Merkmale zu optimieren und die Leistung des Modells zu verbessern. Dies beinhaltete die Auswahl relevanter Merkmale, die Codierung kategorialer Variablen und die Transformation von Merkmalen.
+
+\section{Split des Datensatzes}
+Der Datensatz wurde in Trainings- und Testsets aufgeteilt, um das Modell zu trainieren und zu evaluieren.
+
+\section{Modellentwicklung}
+Verschiedene Machine Learning Modelle wurden evaluiert, darunter Logistische Regression, k-Nearest Neighbors und Random Forest. Die Modelle wurden implementiert und trainiert, um die Leistung auf den Testdaten zu bewerten.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{boxplots.png}
+    \caption{Boxplots für ausgewählte Merkmale}
+\end{figure}
+
+\section{Hyperparameter-Tuning}
+Das Hyperparameter-Tuning wurde mit der Randomized Search Methode durchgeführt, um die optimalen Parameter für die Modelle zu finden. Dies umfasste die Untersuchung verschiedener Kombinationen von Parametern, um die Leistung zu maximieren.
+
+\section{Evaluierung}
+Die Modelle wurden auf ihren Vorhersagegenauigkeit, Fehlermetriken und Klassifikationsberichte evaluiert. Confusion Matrizen wurden erstellt, um die Leistung der Modelle zu visualisieren.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{pairplot.png}
+    \caption{Paarplot für ausgewählte Merkmale}
+\end{figure}
+
+\section{Ergebnisse}
+Die Ergebnisse zeigen, dass das optimierte Modell eine gute Vorhersagegenauigkeit aufweist und sowohl essbare als auch giftige Pilze mit hoher Zuverlässigkeit identifizieren kann. Die Evaluierungsergebnisse wurden im Bericht detailliert dargestellt und interpretiert.
+
+\section{Vorhersage-Demo}
+Eine Vorhersage-Demo wurde entwickelt, um Benutzern die Verwendung des Modells zu erleichtern. Dies ermöglicht es Benutzern, die Vorhersagen für neue Pilze basierend auf ihren Eigenschaften zu generieren.
+
+\section{Codequalität und Reproduzierbarkeit}
+Der Code wurde gut kommentiert, strukturiert und modularisiert, um seine Lesbarkeit und Wartbarkeit zu verbessern. Ein aufgeräumtes Git-Repository wurde erstellt, um die Reproduzierbarkeit des Projekts zu gewährleisten. Eine requirements.txt-Datei wurde erstellt, um die erforderlichen Pakete und Versionen festzuhalten.
+
+\section{Zusammenfassung}
+Das Machine Learning Projekt zur Pilzerkennung war erfolgreich in der Entwicklung eines Modells, das die Klassifizierung von Pilzen basierend auf ihren Eigenschaften ermöglicht. Der Bericht dokumentiert den gesamten Prozess von der Datenaufbereitung bis zur Modellentwicklung und Evaluierung. Das optimierte Modell zeigt vielversprechende Ergebnisse und könnte potenziell für Anwendungen in der Lebensmittelindustrie oder in der Natur verwendet werden.
+
+\end{document}
