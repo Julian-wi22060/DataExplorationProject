@@ -1,4 +1,5 @@
-# DataExplorationProject @ Prof. Dr. rer. nat. Alexander Brandt
+# DataExplorationProject
+## @ Prof. Dr. rer. nat. Alexander Brandt
 
 ## Mushroom Classification Dataset
 
