@@ -5,7 +5,8 @@
 
 ### Overview
 The dataset aims to classify mushrooms as either safe to eat or potentially poisonous.<br>
-The goal is to determine which features most likely indicate a poisonous mushroom.
+The goal is to determine which features most likely indicate a poisonous mushroom.<br>
+For achieving the goal, data exploration was conducted, leading to the implementation of multiple machine learning classifiers.
 
 **Dataset Link:** [Mushroom Classification Dataset on Kaggle](https://www.kaggle.com/datasets/uciml/mushroom-classification)
 
